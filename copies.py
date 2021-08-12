@@ -103,9 +103,10 @@ if __name__ == '__main__':
         printResults(duplicate_files)
       elif sys.argv[-1].lower() == 'trash':
         trashFiles(duplicate_files)
+        delete_Empty_Folders(sys.argv[1:-1])
       elif sys.argv[-1].lower() == 'delete':
         deletePermanently(duplicate_files)
-      delete_Empty_Folders(sys.argv[1:-1])
+        delete_Empty_Folders(sys.argv[1:-1])
       sys.exit()
   else:
     usage()
