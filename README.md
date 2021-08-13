@@ -22,5 +22,3 @@ Executing the script did not caused any problem to me as I just copy the whole f
 
 And this error bounced back today while executing this on a folder with renaming the files which contains the same content inside 
 
-
-Find some of my other stupid works [here](https://github.com/DUMMY-the-BOT)😅
