@@ -1,7 +1,7 @@
 # stress-relief
 Got bored in the first day of new semester and had to clean system for lot of copies of previous sem assignments and projects and notes, written this script to do the task for me
 
-
+# Usage
 python delete_copies.py \<folder1> \<folder2> \<folder3> (and so on) \<print/trash/delete>
 
 You can enter as many folders as you can, but the script checks for just the mentioned folder and its child folders, it does not include parent folder
