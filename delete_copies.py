@@ -54,10 +54,18 @@
 #   print("[-] Folder path mentioned doesn't exists")
 #   sys.exit()
 
-import os
-import sys
-import hashlib
-import send2trash
+try:
+  import os
+  import sys
+  import hashlib
+  import send2trash
+except:
+  subprocess.check_output("pip install --upgrade pip", shell=True)
+  if sys.platform in ['win32', 'cgywin']:
+    subprocess.check_output("python -m pip install send2trash --no-warn-script-location", shell=True)
+  elif sys.platform in ['Mac', 'linux']:
+    try:
+      subprocess.check_output("pip install send2trash --no-warn-script-location", shell=True)
 
 def usage():
   print("[+] python file.py <folder1> <folder2> <folder3> delete -> to permanently delete the repeated files")
